@@ -1,0 +1,18 @@
+def display_star_pattern(name):
+    name_length = len(name)
+
+    # Displaying the upper half of the star pattern
+    for i in range(name_length):
+        for j in range(i+1):
+            print(name[j], end=' ')
+        print()
+
+    # Displaying the lower half of the star pattern
+    for i in range(name_length-1, 0, -1):
+        for j in range(i):
+            print(name[j], end=' ')
+        print()
+
+# Main code
+name = "Bhuvan"
+display_star_pattern(name)
